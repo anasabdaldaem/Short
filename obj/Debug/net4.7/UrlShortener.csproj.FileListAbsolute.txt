@@ -1,4 +1,0 @@
-C:\Users\ANAS\Downloads\Compressed\fast-aspnet-samples-main\fast-aspnet-samples-main\url-shortener\obj\Debug\net4.7\UrlShortener.csprojAssemblyReference.cache
-C:\Users\ANAS\Downloads\Compressed\fast-aspnet-samples-main\fast-aspnet-samples-main\url-shortener\obj\Debug\net4.7\UrlShortener.AssemblyInfoInputs.cache
-C:\Users\ANAS\Downloads\Compressed\fast-aspnet-samples-main\fast-aspnet-samples-main\url-shortener\obj\Debug\net4.7\UrlShortener.AssemblyInfo.cs
-C:\Users\ANAS\Downloads\Compressed\fast-aspnet-samples-main\fast-aspnet-samples-main\url-shortener\obj\Debug\net4.7\UrlShortener.csproj.CoreCompileInputs.cache
