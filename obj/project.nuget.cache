@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xKrZIzzfkU+2jvrVsgBstb/vmZ4QFM1w7KWlkki/uMTGOR3MkzM+6/6koSzALr7a4YzB8Ad0zZP+a23LdL/l8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ANAS\\Downloads\\Compressed\\fast-aspnet-samples-main\\fast-aspnet-samples-main\\url-shortener\\UrlShortener.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ANAS\\.nuget\\packages\\litedb\\5.0.10\\litedb.5.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

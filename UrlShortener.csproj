@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.10" />
+    
+  </ItemGroup>
+  <ItemGroup>
+  
+    <!-- Direct reference to the specific version -->
+    <Reference Include="LiteDB, Version=2.0.0-rc">
+      <!-- Path to v11 dll -->
+      <HintPath>LiteDB.v2.dll</HintPath>
+      <Alias>v2</Alias>
+
+      <SpecificVersion>true</SpecificVersion>
+    </Reference>    
+  </ItemGroup>
+</Project>
