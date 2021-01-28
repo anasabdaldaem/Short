@@ -14,8 +14,8 @@ namespace ClientsideEncryption
         public static string DecryptStringAES(string cipherText)
         {
 
-            var keybytes = Encoding.UTF8.GetBytes("E@q:7tiO`_Z!1$SQ");
-            var iv = Encoding.UTF8.GetBytes("oklJ-}$Z@pkc7fFE");
+            var keybytes = Encoding.UTF8.GetBytes("HH%b?9v97f4?u5pp");
+            var iv = Encoding.UTF8.GetBytes("ypux??QC6NZfwDSH");
 
             var encrypted = Convert.FromBase64String(cipherText);
             var decriptedFromJavascript = DecryptStringFromBytes(encrypted, keybytes, iv);

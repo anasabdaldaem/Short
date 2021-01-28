@@ -72,11 +72,12 @@ static Task SignUp(HttpContext context)
             entry.user=user;
             entry.password=password;
             entry.Url = "https://www.google.com/";
-            entry.Chunk = entry.GetUrlChunk();
             entry.create = DateTime.Now;
             entry.count = 0;
         
         collection.Insert(entry);
+        entry.Chunk = entry.GetUrlChunk();
+        collection.Update(entry);
     }
     else
     {
@@ -182,12 +183,13 @@ static Task HandleShortenUrl(HttpContext context)
                     entry = new ShortLink();
 
                     entry.Url = url;
-                    entry.Chunk = entry.GetUrlChunk();
+                    collection.Insert(entry);
                     entry.user = user;
                     entry.password= password;
                     entry.create = DateTime.Now;
                     entry.count = 0;
-                    collection.Insert(entry);
+                    entry.Chunk = entry.GetUrlChunk();
+                    collection.Update(entry);
                 }
 
             }
@@ -329,6 +331,7 @@ static Task HandleUrl(HttpContext context)
                 redirect = entry.Url;
                 entry.count += 1;
                 entry.lastacc = DateTime.Now;
+                collection.Update(entry);
             }
         }
     }
@@ -342,10 +345,9 @@ static Task HandleUrl(HttpContext context)
 
 public class ShortLink
 {
-    public string GetUrlChunk()
-    {
-        Chunk = WebEncoders.Base64UrlEncode(BitConverter.GetBytes(Id));
-        return Chunk;
+    public  string GetUrlChunk()
+    { 
+        return Chunk=WebEncoders.Base64UrlEncode(BitConverter.GetBytes(Id));
     }
 
     public int GetId(string urlChunk)
